@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background: #FFDF8C;
+}
+.container {
+    max-width: 1340px;
+    width: 100%;
+    height: 920px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    width: 1340px;
+    height: 980px;
+}
+.header {
+    height: 50px;
+    width: 100%;
+    margin-top: 84px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.pizza-logo {
+    margin-top: 5px;
+}
+.logo-block {
+    width: 320px;
+    height: 50px;
+}
+.text-logo-1 {
+    font-size: 24px;
+    position: relative;
+    top: -45px;
+    left: 55px;
+}
+.text-logo-2 {
+    color: #7B7B7B;
+    font-size: 16px;
+    position: relative;
+    top: -45px;
+    left: 55px;
+}
+.info {
+    width: 550px;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.text1 {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+}
+.text2 {
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
+    margin-top: 20px;
+}
+.run {
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.btn-back {
+    margin-top: 75px;
+    width: 210px;
+    height: 50px;
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-back:hover {
+    animation: btn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes btn {
+    100% {
+        background: #fff;
+        border: 3px solid #000;
+        border-radius: 30px;
+        color: #000;
+    }
+}
+@media only screen and (max-width: 1136px) {
+    .header {
+        width: 300px;
+    }
+    .text1 {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 32px;
+    }
+    .text2 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 566px) {
+    .content {
+        margin: 0 auto;
+        max-width: 566px;
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+    }
+    .header {
+        margin-left: 10px;
+    }
+}
